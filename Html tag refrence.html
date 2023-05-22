@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Html tag refrence</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5aabcf16-454c-4851-974f-f867c50784ec" class="page sans"><header><h1 class="page-title">Html tag refrence</h1></header><div class="page-body"><figure id="e67b7c76-a3a5-4cb6-8480-73404e076610"><a href="https://www.youtube.com/channel/UCMeVTDrjNwyoB8VKU6JPOsw" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">webco programming</div><div class="bookmark-description">Hello everyone here we&#x27;re gonna cover all sides of programming and tech,
+if you want to be a professional programmer and get a job with your skill, watch the videos and practice with them.
+
+see you...
+</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/286e6262/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/channel/UCMeVTDrjNwyoB8VKU6JPOsw</div></div><img src="https://yt3.ggpht.com/Bq9PSktwsqkZiweOhjyavFVBN3pNFK6AYSURvk42mIb50OIc77nlHHWoaiNjhvi2yUu02fMN=s800-c-k-c0x00ffffff-no-rj" class="bookmark-image"/></a></figure><table id="93ed2f69-37b8-4fb2-a20a-4531d4544cff" class="simple-table"><tbody><tr id="08a8ac86-9545-43be-be90-77a4e81a428a"><td id="zYQt" class="">Tag</td><td id="vX?y" class="" style="width:650px">Description</td></tr><tr id="509b592c-9e09-4b09-9fff-1a8fdd089a62"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_comment.asp">&lt;!--...--&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a comment</td></tr><tr id="e645f11a-6b33-4494-ac6e-fe0726b12dc6"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_doctype.asp">&lt;!DOCTYPE&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the document type</td></tr><tr id="1bcf8568-e6ec-4223-86fc-7031e7534784"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a hyperlink</td></tr><tr id="587d280d-b5ec-46e6-8881-646f588d474e"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_abbr.asp">&lt;abbr&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an abbreviation or an acronym</td></tr><tr id="8d8e6c7e-06e6-4650-b09a-4ab145b1c3c6"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_acronym.asp">&lt;acronym&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use <a href="https://www.w3schools.com/tags/tag_abbr.asp">&lt;abbr&gt;</a> instead.Defines an acronym</td></tr><tr id="8aa251cb-d806-47cd-b08a-489a728223f8"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_address.asp">&lt;address&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines contact information for the author/owner of a document</td></tr><tr id="12724cae-a759-40cd-a059-929ff655ddc8"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_applet.asp">&lt;applet&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use <a href="https://www.w3schools.com/tags/tag_embed.asp">&lt;embed&gt;</a> or <a href="https://www.w3schools.com/tags/tag_object.asp">&lt;object&gt;</a> instead.Defines an embedded applet</td></tr><tr id="14bb1385-5c59-45d0-8713-322b66b7cc60"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_area.asp">&lt;area&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an area inside an image map</td></tr><tr id="d3e7625f-ab2d-4614-a9aa-99da27283892"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_article.asp">&lt;article&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an article</td></tr><tr id="43ed1237-b3ac-498c-a076-600b70f2e687"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_aside.asp">&lt;aside&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines content aside from the page content</td></tr><tr id="bf3e6acb-9b52-475b-93a7-2741bae7a192"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_audio.asp">&lt;audio&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines embedded sound content</td></tr><tr id="636cdc93-9b68-4cd8-a0a4-05e3f369dab1"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_b.asp">&lt;b&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines bold text</td></tr><tr id="0beda2aa-8f1a-4b2a-9fd4-9f9604831282"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_base.asp">&lt;base&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies the base URL/target for all relative URLs in a document</td></tr><tr id="c4760654-1c72-46bc-9f5f-9253f5e41881"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_basefont.asp">&lt;basefont&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use CSS instead.Specifies a default color, size, and font for all text in a document</td></tr><tr id="229a178f-64bf-46aa-b15c-6ca4e035aeed"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_bdi.asp">&lt;bdi&gt;</a></td><td id="vX?y" class="" style="width:650px">Isolates a part of text that might be formatted in a different direction from other text outside it</td></tr><tr id="0ef57d34-4631-4c57-8bf0-065b1ba67868"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_bdo.asp">&lt;bdo&gt;</a></td><td id="vX?y" class="" style="width:650px">Overrides the current text direction</td></tr><tr id="1b4a50f0-6d8e-470c-856b-7333b5f57214"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_big.asp">&lt;big&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use CSS instead.Defines big text</td></tr><tr id="c27130db-32fa-41f9-99cd-212b0385bc05"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a section that is quoted from another source</td></tr><tr id="007395ce-1d81-44c2-b888-7e91b762c470"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_body.asp">&lt;body&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the document&#x27;s body</td></tr><tr id="effbaa32-8bef-4f75-8b46-1b65dd84ad3a"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_br.asp">&lt;br&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a single line break</td></tr><tr id="45d9305e-fff0-4926-9d5a-461e636e05cb"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a clickable button</td></tr><tr id="cf91ac74-ac54-4235-9d1c-cbea0147cc7c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_canvas.asp">&lt;canvas&gt;</a></td><td id="vX?y" class="" style="width:650px">Used to draw graphics, on the fly, via scripting (usually JavaScript)</td></tr><tr id="b3ba6eae-6a9a-4073-a652-e8206675fb2d"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_caption.asp">&lt;caption&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a table caption</td></tr><tr id="7dfa6327-4780-444e-b383-049acad56cac"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_center.asp">&lt;center&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use CSS instead.Defines centered text</td></tr><tr id="98d6d9b0-54eb-4c1a-94c5-47731f120586"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_cite.asp">&lt;cite&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the title of a work</td></tr><tr id="174f28b2-38e9-4322-a95e-5d1c797e1cdf"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_code.asp">&lt;code&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a piece of computer code</td></tr><tr id="d688e1e5-c40b-4a03-9541-c9cfe08ecb86"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_col.asp">&lt;col&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies column properties for each column within a &lt;colgroup&gt; element</td></tr><tr id="a51bcdce-1339-4592-9763-c4dc0e1275ae"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_colgroup.asp">&lt;colgroup&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies a group of one or more columns in a table for formatting</td></tr><tr id="790769c4-e542-4c91-b05b-8ff8a6a918ad"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_data.asp">&lt;data&gt;</a></td><td id="vX?y" class="" style="width:650px">Adds a machine-readable translation of a given content</td></tr><tr id="c1b3e436-59e0-4f47-9e22-41dc2c8aced3"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_datalist.asp">&lt;datalist&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies a list of pre-defined options for input controls</td></tr><tr id="cda8450e-678c-4d67-9a46-143c7c7dc739"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dd.asp">&lt;dd&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a description/value of a term in a description list</td></tr><tr id="66a68ba9-7fc7-4685-811b-e52a627df30d"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_del.asp">&lt;del&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines text that has been deleted from a document</td></tr><tr id="33c94226-7256-425d-ab86-2f5bc1489d92"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_details.asp">&lt;details&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines additional details that the user can view or hide</td></tr><tr id="57269e61-b25b-4c73-95d0-584247f6b9e2"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dfn.asp">&lt;dfn&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies a term that is going to be defined within the content</td></tr><tr id="26ea2e79-eb51-4a97-9fc4-a786788601d2"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dialog.asp">&lt;dialog&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a dialog box or window</td></tr><tr id="0e1d8eb8-aed0-4126-b9aa-efda42034aae"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dir.asp">&lt;dir&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use <a href="https://www.w3schools.com/tags/tag_ul.asp">&lt;ul&gt;</a> instead.Defines a directory list</td></tr><tr id="10c7ca1a-37c9-42ee-ae7a-2b980aac5b0c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_div.asp">&lt;div&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a section in a document</td></tr><tr id="ea7b66e8-d483-4944-9f5a-86ced20a17ef"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dl.asp">&lt;dl&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a description list</td></tr><tr id="94d53f5e-082f-4fee-9f11-ebec0a8e71e7"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_dt.asp">&lt;dt&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a term/name in a description list</td></tr><tr id="2a57460e-228f-4d4c-b7ee-be506aca8a30"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_em.asp">&lt;em&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines emphasized text</td></tr><tr id="41696f01-4d02-4ca1-a53c-5882f40b21b4"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_embed.asp">&lt;embed&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a container for an external application</td></tr><tr id="e75250d0-86f9-4c68-a24e-38256067ef8d"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td><td id="vX?y" class="" style="width:650px">Groups related elements in a form</td></tr><tr id="dfe7fbcf-c1e7-4d79-8a1f-a92dabfc43d1"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a caption for a &lt;figure&gt; element</td></tr><tr id="70bdb62d-d212-4c21-93b4-67a4c205f1d4"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_figure.asp">&lt;figure&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies self-contained content</td></tr><tr id="559e4b4b-16e8-4871-aab9-982203fbed11"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_font.asp">&lt;font&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use CSS instead.Defines font, color, and size for text</td></tr><tr id="acdf91ec-0cc1-4c0b-85dd-7315f9c6d6da"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_footer.asp">&lt;footer&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a footer for a document or section</td></tr><tr id="f8642c26-7d07-4788-9b14-475212976f9e"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an HTML form for user input</td></tr><tr id="68f1c1fa-db5f-49ff-bf28-a8c02374c88f"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_frame.asp">&lt;frame&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5.Defines a window (a frame) in a frameset</td></tr><tr id="635f4e99-b4f7-4c5f-ba61-62b610cb8d74"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_frameset.asp">&lt;frameset&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5.Defines a set of frames</td></tr><tr id="a8a30097-d539-4a15-a59a-e467428ee0fe"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_hn.asp">&lt;h1&gt; to &lt;h6&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines HTML headings</td></tr><tr id="dce2e1e6-f38c-4ff3-ae61-6c141c84d93b"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_head.asp">&lt;head&gt;</a></td><td id="vX?y" class="" style="width:650px">Contains metadata/information for the document</td></tr><tr id="7f40e04a-d3b1-4bf3-8bcf-116edcf77182"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_header.asp">&lt;header&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a header for a document or section</td></tr><tr id="5d4fb0d5-455e-40c5-bb73-d5c02907e9fc"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_hr.asp">&lt;hr&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a thematic change in the content</td></tr><tr id="d2fe5223-d011-41ed-858d-0221c0fada02"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_html.asp">&lt;html&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the root of an HTML document</td></tr><tr id="54ed98d8-f3d2-4262-9f23-91eb68e76f6b"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_i.asp">&lt;i&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a part of text in an alternate voice or mood</td></tr><tr id="1e0b6c26-0d42-4c52-88b0-2fd970927f1c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_iframe.asp">&lt;iframe&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an inline frame</td></tr><tr id="a6022699-3f31-4ff5-9d26-dc17455b8358"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an image</td></tr><tr id="094ace0c-17de-4b20-9945-989bba081146"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an input control</td></tr><tr id="f75cfd42-5280-4fb6-b2f3-131e7f66ee3e"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_ins.asp">&lt;ins&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a text that has been inserted into a document</td></tr><tr id="ead2672b-8b5b-46e9-a681-45cb278c04b5"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_kbd.asp">&lt;kbd&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines keyboard input</td></tr><tr id="f6cc83b0-5a2c-490e-b3d0-fb3996dd7337"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a label for an &lt;input&gt; element</td></tr><tr id="23b852dd-0b0f-49d7-ae02-a603aed6f072"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_legend.asp">&lt;legend&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a caption for a &lt;fieldset&gt; element</td></tr><tr id="b1e07d1b-a7e7-469a-9919-a04023e80ea9"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_li.asp">&lt;li&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a list item</td></tr><tr id="069af80e-7a7c-4f91-8c2c-942f679916cc"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the relationship between a document and an external resource (most used to link to style sheets)</td></tr><tr id="642e520d-3417-4f3c-a5ee-406ff7188da2"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_main.asp">&lt;main&gt;</a></td><td id="vX?y" class="" style="width:650px">Specifies the main content of a document</td></tr><tr id="ff974441-59c5-40e7-9b44-e1876c3c9b71"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_map.asp">&lt;map&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an image map</td></tr><tr id="600b7423-726c-4f2c-a004-3bcf419c2966"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_mark.asp">&lt;mark&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines marked/highlighted text</td></tr><tr id="f7c48af4-54dd-4b85-b532-272546799774"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_meta.asp">&lt;meta&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines metadata about an HTML document</td></tr><tr id="b4b731cd-f008-428e-8b33-3f50b53be7f6"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_meter.asp">&lt;meter&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a scalar measurement within a known range (a gauge)</td></tr><tr id="c79f3075-bd15-454b-9679-e6c9218a2561"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_nav.asp">&lt;nav&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines navigation links</td></tr><tr id="8da0824b-af1b-4129-b390-ab985e9b3a38"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_noframes.asp">&lt;noframes&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5.Defines an alternate content for users that do not support frames</td></tr><tr id="c0b72135-b2c0-4dbd-854a-287c148780e7"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_noscript.asp">&lt;noscript&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an alternate content for users that do not support client-side scripts</td></tr><tr id="1fe88820-aa81-41fb-a6fd-c515db948c98"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_object.asp">&lt;object&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a container for an external application</td></tr><tr id="14cc2eb7-f6a4-40f3-85be-b7136da150c2"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an ordered list</td></tr><tr id="1c0f27e8-f3c8-4f8c-aef4-64e540ce1313"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a group of related options in a drop-down list</td></tr><tr id="c42f2abe-e05c-4e1b-8c8c-2596bcf37d09"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an option in a drop-down list</td></tr><tr id="59007572-2da7-42b4-b526-2e250566560b"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines the result of a calculation</td></tr><tr id="7ae13094-35c8-4d78-8df4-1f6c39a6c215"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_p.asp">&lt;p&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a paragraph</td></tr><tr id="bf4f7c7f-56ee-41e6-9e3a-c0e5cb8589e6"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_param.asp">&lt;param&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a parameter for an object</td></tr><tr id="619b7a52-3c7b-4c24-99e6-7620bc6d21bf"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a container for multiple image resources</td></tr><tr id="9a631abc-d49a-4c2d-9068-e36f0c092652"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_pre.asp">&lt;pre&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines preformatted text</td></tr><tr id="dd38def4-3322-4ad7-8fed-02aa8c47c1dc"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_progress.asp">&lt;progress&gt;</a></td><td id="vX?y" class="" style="width:650px">Represents the progress of a task</td></tr><tr id="366f953c-750d-448f-a357-27a1ad96c07e"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_q.asp">&lt;q&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a short quotation</td></tr><tr id="40810138-2e78-4b08-9198-96a89dea17c3"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_rp.asp">&lt;rp&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines what to show in browsers that do not support ruby annotations</td></tr><tr id="d0b1c1b7-c58a-497e-8b82-f9c1402a7f38"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_rt.asp">&lt;rt&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an explanation/pronunciation of characters (for East Asian typography)</td></tr><tr id="dace6ccb-23bf-4f21-944b-4f112f05901b"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_ruby.asp">&lt;ruby&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a ruby annotation (for East Asian typography)</td></tr><tr id="e7794a33-7b37-484a-8105-e788270f7f4b"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_s.asp">&lt;s&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines text that is no longer correct</td></tr><tr id="d090ddc0-2d39-48b8-9c49-da820d0a6990"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_samp.asp">&lt;samp&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines sample output from a computer program</td></tr><tr id="0b5403d8-1ba5-49d5-8086-8f49daf55211"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_script.asp">&lt;script&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a client-side script</td></tr><tr id="d4bb9037-9066-40f0-9cdd-f6b68d3fce12"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_section.asp">&lt;section&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a section in a document</td></tr><tr id="d5f8a15a-3634-4bad-9231-92606234c54d"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a drop-down list</td></tr><tr id="e1327d11-9cbc-46b5-a7f0-60a53bd2f99e"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_small.asp">&lt;small&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines smaller text</td></tr><tr id="160bc801-e7da-421a-91ef-88cd0536ed2f"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_source.asp">&lt;source&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td></tr><tr id="51ec3304-3b4d-4f26-8279-192de8a5239c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_span.asp">&lt;span&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a section in a document</td></tr><tr id="04ba3ff5-87b6-4d02-9503-5e210a5d041f"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_strike.asp">&lt;strike&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use <a href="https://www.w3schools.com/tags/tag_del.asp">&lt;del&gt;</a> or <a href="https://www.w3schools.com/tags/tag_s.asp">&lt;s&gt;</a> instead.Defines strikethrough text</td></tr><tr id="9caf6285-7f3a-413b-9bee-d13248b8d7d6"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_strong.asp">&lt;strong&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines important text</td></tr><tr id="6e3e7d34-8675-438c-b098-d22a44a576a8"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_style.asp">&lt;style&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines style information for a document</td></tr><tr id="411a2aaa-5bd1-4d6c-a7f6-822ebade6f5c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_sub.asp">&lt;sub&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines subscripted text</td></tr><tr id="42114141-18f0-4224-8a8a-4eef9979b865"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_summary.asp">&lt;summary&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a visible heading for a &lt;details&gt; element</td></tr><tr id="9f863d32-8cb2-4640-9f4d-ff712e6029fa"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_sup.asp">&lt;sup&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines superscripted text</td></tr><tr id="b0daa67f-484f-4692-9ec8-84decfe147dc"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_svg.asp">&lt;svg&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a container for SVG graphics</td></tr><tr id="cc761b40-691b-487c-80e8-ba54656ea77a"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_table.asp">&lt;table&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a table</td></tr><tr id="0c2b309d-ae05-4125-b2ef-7dcff25d7753"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_tbody.asp">&lt;tbody&gt;</a></td><td id="vX?y" class="" style="width:650px">Groups the body content in a table</td></tr><tr id="5d8d1fbd-a614-4a07-81c7-581affa88af2"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_td.asp">&lt;td&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a cell in a table</td></tr><tr id="e47648aa-33d5-4cd0-9b03-94df57b3504c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_template.asp">&lt;template&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a container for content that should be hidden when the page loads</td></tr><tr id="6c2e24cc-5954-49ea-9e2c-0abaa982b1ed"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a multiline input control (text area)</td></tr><tr id="654c0525-f0d8-47c7-b37e-28741f0babde"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_tfoot.asp">&lt;tfoot&gt;</a></td><td id="vX?y" class="" style="width:650px">Groups the footer content in a table</td></tr><tr id="f048d08d-b1c1-42b2-a7cb-c5907593f85a"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_th.asp">&lt;th&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a header cell in a table</td></tr><tr id="3d3c1581-7f4f-4546-a1e1-103e474e1295"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_thead.asp">&lt;thead&gt;</a></td><td id="vX?y" class="" style="width:650px">Groups the header content in a table</td></tr><tr id="7b515095-671d-4379-8c03-cd9e9e25eaa9"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_time.asp">&lt;time&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a specific time (or datetime)</td></tr><tr id="fe3dc93e-c408-41dc-bf74-b57fa24ad376"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_title.asp">&lt;title&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a title for the document</td></tr><tr id="3219bc58-eb49-4843-bab3-4edf549fdf89"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_tr.asp">&lt;tr&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a row in a table</td></tr><tr id="e73d3c65-5a21-4732-a153-edef8f86326c"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_track.asp">&lt;track&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td></tr><tr id="3610fc47-fc3a-45da-8554-e803adc800ae"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_tt.asp">&lt;tt&gt;</a></td><td id="vX?y" class="" style="width:650px">Not supported in HTML5. Use CSS instead.Defines teletype text</td></tr><tr id="c52e09de-0968-4a30-b663-5c5202f620dd"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_u.asp">&lt;u&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines some text that is unarticulated and styled differently from normal text</td></tr><tr id="1e8f481f-d60f-485c-868d-119ac2909f53"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_ul.asp">&lt;ul&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines an unordered list</td></tr><tr id="53cc021f-569b-4662-84cd-f453a36dfdea"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_var.asp">&lt;var&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a variable</td></tr><tr id="e2a4fb07-2258-4ccf-9909-caa37a5e53bf"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_video.asp">&lt;video&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines embedded video content</td></tr><tr id="4eb215db-52de-445b-a926-ae2e269d12d3"><td id="zYQt" class=""><a href="https://www.w3schools.com/tags/tag_wbr.asp">&lt;wbr&gt;</a></td><td id="vX?y" class="" style="width:650px">Defines a possible line-break. </td></tr></tbody></table><p id="432494b4-b3f9-4c94-9acf-0e92a25a3303" class="">Channel link ⇒ <a href="https://www.youtube.com/channel/UCMeVTDrjNwyoB8VKU6JPOsw">https://www.youtube.com/channel/UCMeVTDrjNwyoB8VKU6JPOsw</a></p></div></article></body></html>
